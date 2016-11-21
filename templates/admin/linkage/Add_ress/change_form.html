@@ -1,0 +1,30 @@
+{% extends "admin/change_form.html" %}
+
+{% block extrahead %}
+{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+    <script>
+    console.log('the message by custome js change_form');
+
+    django.jQuery(function() {
+        var select = django.jQuery("#id_provience");
+        select.change(function(){
+            console.log("value change"+django.jQuery(this).val())
+            var url = "/linkage/get_city/"+django.jQuery(this).val();//能够正确的访问到view的url
+            console.log(url);
+            django.jQuery.get(
+                url,
+                function(data){
+                    var target = django.jQuery("#id_city");
+                    target.empty();//先要清空一下
+                    data.forEach(function(e){
+                        // 将从view得到的id和城市名称赋值给city的select
+                        target.append("<option value='"+e.id+"'>"+e.name+"<option>");
+                        target.eq(0).attr('selected', 'true');
+                    });
+            })
+        });
+
+    });
+    </script>
+{% endblock %}
