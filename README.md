@@ -9,11 +9,16 @@
 - 生成数据库文件
 ```
 $python manage.py makemigrations linkage
-$python manaee.py migrate
+$python manage.py migrate
 ```
 - 创建超级管理员
 ```
 $python manage.py createsuperuser
+Username (leave blank to use 'smallerpig'):
+Email address: zhuqiwuxi#gmail.com
+Password:
+Password (again):
+Superuser created successfully.
 
 ```
 
