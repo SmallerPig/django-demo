@@ -30,3 +30,7 @@ $python manage.py runserver
 - 使用刚才创建的超级管理员进入后台并先后创建省份、城市
 
 - 最后在创建address就可以看到二级联动的效果了。
+
+
+## 项目说明地址：
+http://www.smallerpig.com/1125.html
