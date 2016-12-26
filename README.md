@@ -31,6 +31,7 @@ $python manage.py runserver
 
 - 最后在创建address就可以看到二级联动的效果了。
 
+**Note:**需要手动添加省市数据
 
 ## 项目说明地址：
 http://www.smallerpig.com/1125.html
