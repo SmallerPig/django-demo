@@ -19,7 +19,7 @@ Email address: zhuqiwuxi#gmail.com
 Password:
 Password (again):
 Superuser created successfully.
-
+edit some
 ```
 
 - 启动本地调试服务器
