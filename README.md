@@ -34,4 +34,4 @@ $python manage.py runserver
 **Note:**需要手动添加省市数据
 
 ## 项目说明地址：
-http://www.smallerpig.com/1125.html
+http://blog.smallerpig.com/1125.html
